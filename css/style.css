@@ -1,8 +1,8 @@
 
 :root {
-  --primary: #06bbcc;
-  --light: #f0fbfc;
-  --dark: #181d38;
+  --primary: #FF5733;
+  --light: #F7F7F7;
+  --dark: #2C3E50;
 }
 
 .fw-medium {
@@ -19,6 +19,8 @@
   right: 45px;
   bottom: 45px;
   z-index: 99;
+  background: transparent;
+  border: none;
 }
 
 /*** dial flot ***/
@@ -208,25 +210,11 @@
   }
 }
 
-.header-carousel .owl-nav .owl-prev,
-.header-carousel .owl-nav .owl-next {
-  margin: 7px 0;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  background: transparent;
-  border: 1px solid #ffffff;
-  font-size: 22px;
-  transition: 0.5s;
+.bi-chevron-right::before{
+  content:none;
 }
-
-.header-carousel .owl-nav .owl-prev:hover,
-.header-carousel .owl-nav .owl-next:hover {
-  background: var(--primary);
-  border-color: var(--primary);
+.bi-chevron-left::before{
+  content:none;
 }
 
 .page-header {
@@ -252,27 +240,7 @@
   text-transform: uppercase;
 }
 
-.section-title::before {
-  position: absolute;
-  content: "";
-  width: calc(100% + 80px);
-  height: 2px;
-  top: 4px;
-  left: -40px;
-  background: var(--primary);
-  z-index: -1;
-}
 
-.section-title::after {
-  position: absolute;
-  content: "";
-  width: calc(100% + 120px);
-  height: 2px;
-  bottom: 5px;
-  left: -60px;
-  background: var(--primary);
-  z-index: -1;
-}
 
 .section-title.text-start::before {
   width: calc(100% + 40px);
@@ -696,12 +664,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 55vh;
   position: relative;
 }
 
 .background-container {
-  background-image: /*url('../img2/vehicles/hector3.jpg'),*/ linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(116, 117, 135, 0.51) 100%);
+  background-image: url('../img/cbg.jpg'), linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(116, 117, 135, 0.51) 100%);
   background-size: cover;
   background-position: center;
   clip-path: polygon(0% 0%, 50% 0%, 100% 50%, 50% 100%, 0% 100%, 50% 50%);
@@ -774,12 +742,12 @@
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-  z-index: 4;
+  z-index: 1999;
 }
 
 .custom-popup-form {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(0 0 0/75%);
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -790,7 +758,7 @@
 .custom-form-container {
   position: relative;
   z-index: 1;
-  background-color: rgba(116, 117, 135, 0.8);
+  
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
