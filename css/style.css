@@ -642,7 +642,7 @@
 
 /* Scrolling content */
 .modal-content {
-  max-height: 90%;
+  max-height: 80%;
   /* Set a maximum height for scrolling content */
   overflow: auto;
   /* Enable scrolling when content exceeds the height */
