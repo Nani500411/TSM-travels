@@ -716,14 +716,14 @@
 }
 
 .input-box input[type="submit"] {
-  background-color: #007bff;
+  background-color: #FF7F50;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .input-box input[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #d8734e;
 }
 
 
